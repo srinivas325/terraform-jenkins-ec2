@@ -1,3 +1,3 @@
 variable "region" {
-  description = "region"
+  region = "ap-south-1"
 }
