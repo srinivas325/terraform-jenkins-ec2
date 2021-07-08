@@ -14,8 +14,8 @@
 
       stage('TF Init&Plan') {
         steps {
-           'terraform init'
-           'terraform plan'
+          bat 'terraform init'
+          bat 'terraform plan'
         }      
       }
 
@@ -29,7 +29,7 @@
 
       stage('TF Apply') {
         steps {
-          'terraform apply -input=false'
+          bat 'terraform apply -input=false'
         }
       }
     } 
